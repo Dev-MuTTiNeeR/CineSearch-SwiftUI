@@ -6,17 +6,26 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		B26103D32F4507C1004DD283 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B26103CF2F4507C1004DD283 /* Assets.xcassets */; };
+		B26103D42F4507C1004DD283 /* CineSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26103D02F4507C1004DD283 /* CineSearchApp.swift */; };
+		B26103D52F4507C1004DD283 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26103D12F4507C1004DD283 /* ContentView.swift */; };
+		B26103D92F450810004DD283 /* CineData.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26103D82F450810004DD283 /* CineData.swift */; };
+		B26103DB2F450E53004DD283 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26103DA2F450E53004DD283 /* NetworkManager.swift */; };
+		B26103DD2F4525DC004DD283 /* MovieCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26103DC2F4525DC004DD283 /* MovieCard.swift */; };
+		B26103DF2F452F60004DD283 /* Secrets.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26103DE2F452F60004DD283 /* Secrets.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		B26103C12F450384004DD283 /* CineSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CineSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B26103CF2F4507C1004DD283 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B26103D02F4507C1004DD283 /* CineSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CineSearchApp.swift; sourceTree = "<group>"; };
+		B26103D12F4507C1004DD283 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B26103D82F450810004DD283 /* CineData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CineData.swift; sourceTree = "<group>"; };
+		B26103DA2F450E53004DD283 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B26103DC2F4525DC004DD283 /* MovieCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCard.swift; sourceTree = "<group>"; };
+		B26103DE2F452F60004DD283 /* Secrets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Secrets.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		B26103C32F450384004DD283 /* CineSearch */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = CineSearch;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		B26103BE2F450384004DD283 /* Frameworks */ = {
@@ -32,7 +41,7 @@
 		B26103B82F450384004DD283 = {
 			isa = PBXGroup;
 			children = (
-				B26103C32F450384004DD283 /* CineSearch */,
+				B26103D22F4507C1004DD283 /* CineSearch */,
 				B26103C22F450384004DD283 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +52,36 @@
 				B26103C12F450384004DD283 /* CineSearch.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		B26103D22F4507C1004DD283 /* CineSearch */ = {
+			isa = PBXGroup;
+			children = (
+				B26103D62F4507C7004DD283 /* Models */,
+				B26103D72F4507D0004DD283 /* Views */,
+				B26103CF2F4507C1004DD283 /* Assets.xcassets */,
+				B26103D02F4507C1004DD283 /* CineSearchApp.swift */,
+				B26103DE2F452F60004DD283 /* Secrets.swift */,
+			);
+			path = CineSearch;
+			sourceTree = "<group>";
+		};
+		B26103D62F4507C7004DD283 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B26103D82F450810004DD283 /* CineData.swift */,
+				B26103DA2F450E53004DD283 /* NetworkManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B26103D72F4507D0004DD283 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B26103D12F4507C1004DD283 /* ContentView.swift */,
+				B26103DC2F4525DC004DD283 /* MovieCard.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +98,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				B26103C32F450384004DD283 /* CineSearch */,
 			);
 			name = CineSearch;
 			packageProductDependencies = (
@@ -109,6 +145,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26103D32F4507C1004DD283 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +156,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B26103DD2F4525DC004DD283 /* MovieCard.swift in Sources */,
+				B26103DF2F452F60004DD283 /* Secrets.swift in Sources */,
+				B26103DB2F450E53004DD283 /* NetworkManager.swift in Sources */,
+				B26103D42F4507C1004DD283 /* CineSearchApp.swift in Sources */,
+				B26103D92F450810004DD283 /* CineData.swift in Sources */,
+				B26103D52F4507C1004DD283 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
